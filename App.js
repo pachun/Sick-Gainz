@@ -6,11 +6,13 @@
 
 import React, { Component } from 'react';
 import {
+  AppRegistry,
   Platform,
   StyleSheet,
   Text,
   View
 } from 'react-native';
+import { DevMenu } from 'react-native-today-widget'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -55,3 +57,13 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+const TodayWidget = () =>
+  <View>
+    <Text>
+      Gainz Go Here
+      { __DEV__ && <DevMenu/> }
+    </Text>
+  </View>
+
+AppRegistry.registerComponent('TodayWidgetExtension', () => TodayWidget)

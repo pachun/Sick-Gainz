@@ -33,7 +33,7 @@ class App extends React.Component<{}> {
       <View style={style.stackChildrenVertically}>
         <View style={style.margins}>
           <LargeCurrencyLabel label="Cost" amount={this.cost()} onUpdateAmount={this.onUpdateCost}/>
-          <LargeCurrencyLabel label="Assets" amount={0} />
+          {/* <LargeCurrencyLabel label="Assets" amount={0} /> */}
         </View>
       </View>
     </FormattedWrapper>

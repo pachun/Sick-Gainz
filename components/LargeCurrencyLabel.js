@@ -33,7 +33,7 @@ const style = {
   },
   label: {
     fontSize:16,
-  }
+  },
 }
 
 const LargeCurrencyLabel = ({ label, amount, onUpdateAmount }) =>

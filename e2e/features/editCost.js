@@ -4,7 +4,8 @@ describe('Sick Gainz Home Screen', () => {
   const doneWithKeyboardButton = () => element(by.label('Done').and(by.type('UIButtonLabel')))
 
   it('displays a $0.00 cost value as an empty state', async () => {
-    await expect(element(by.label('$0.00'))).toExist()
+    await expect(element(by.label('Cost'))).toExist()
+    await expect(element(by.label('$0.00')).atIndex(0)).toExist()
   })
 
   it('formats cost values', async () => {
